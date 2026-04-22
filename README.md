@@ -177,6 +177,18 @@ import type {
 } from 'zeussit';
 ```
 
+## Contributing
+
+```bash
+git clone https://github.com/Forevr-Games/zeussit.git
+cd zeussit
+bun install
+bun test          # run the test suite (56 tests)
+bun run build     # compile to dist/
+```
+
+PRs welcome — please include tests for new functionality. The test harness at `test/testUtils.ts` provides fake Redis/scheduler/logger instances for writing route and action tests.
+
 ## License
 
 [MIT](./LICENSE) — ForeVR Games
