@@ -177,6 +177,14 @@ import type {
 } from 'zeussit';
 ```
 
+## Guides
+
+- [Getting Started](./docs/getting-started.md) — install, setup, first action
+- [Actions](./docs/actions.md) — custom operations, error handling, auto-registration
+- [Key Namespaces](./docs/key-namespaces.md) — making Redis inspectable
+- [Safety Model](./docs/safety-model.md) — confirm tokens, rate limiting, audit logging
+- [Console Helper](./docs/console-helper.md) — browser devtools snippet
+
 ## Contributing
 
 ```bash
