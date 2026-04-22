@@ -1,0 +1,48 @@
+{
+  "name": "zeussit",
+  "version": "0.1.0",
+  "description": "Safety-gated Express router for Redis inspection, cron control, scheduler jobs, and custom debug actions — built for Devvit apps",
+  "license": "MIT",
+  "author": "ForeVR Games <darren@forevrgames.com> (https://forevrgames.com)",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Forevr-Games/zeussit.git"
+  },
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "main": "./dist/index.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "prepublishOnly": "bun run build",
+    "test": "vitest run",
+    "type-check": "tsc --noEmit -p ."
+  },
+  "types": "./dist/index.d.ts",
+  "peerDependencies": {
+    "@devvit/web": ">=0.12.0",
+    "express": "^5.0.0"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.0",
+    "@types/express-serve-static-core": "^5.1.1",
+    "@types/supertest": "^6.0.2",
+    "supertest": "^7.0.0"
+  },
+  "keywords": [
+    "admin",
+    "debug",
+    "devvit",
+    "express",
+    "middleware",
+    "ops",
+    "redis"
+  ]
+}
